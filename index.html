@@ -7,11 +7,40 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<style>
+  .align__left-side{
+    transform: translateX(-80%) scale(0.95);
+    transition: all 0.8s ease-in-out;
+    opacity:0;
+  }
+  .align__right-side{
+    transform: translateX(80%) scale(0.95);
+    transition: all 0.8s ease-in-out;
+    opacity:0;
+  }
+  .active{
+    transform: translateX(0%) scale(1);
+    opacity:1;
+  }
+</style>
 <body class="bg-orange-400">    
-<div class="w-4/6 mx-auto px-6 py-4 bg-white">
+<div class="w-3/5 mx-auto px-6 py-4 bg-white">
+    <h1 class="text-4xl font-bold">Slide In On Scroll</h1>
+    <p class="py-2 text-lg">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis error recusandae accusantium commodi maxime explicabo nulla, officiis fugit vero libero. 
+       Ab consequuntur similique enim corporis dolore nam? Sapiente veniam reiciendis, dolorum consectetur voluptatibus eveniet ad obcaecati, quibusdam neque dicta 
+       doloremque libero porro suscipit culpa. Sequi esse tenetur, saepe eligendi necessitatibus laudantium ullam est accusantium veritatis, quis corporis consequatur 
+       praesentium fuga?
+    </p>
+
+    <p class="py-2 text-lg">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis error recusandae accusantium commodi maxime explicabo nulla, officiis fugit vero libero. 
+       Ab consequuntur similique enim corporis dolore nam? Sapiente veniam reiciendis, dolorum consectetur voluptatibus eveniet ad obcaecati, quibusdam neque dicta 
+       doloremque libero porro suscipit culpa.
+    </p>
 
     <div class="flex mt-5 justify-between">
-      <img src="img_1.jpg" alt="First Image" class="w-3/6">
+      <img src="img_1.jpg" alt="First Image" class="w-3/6 align__left-side">
       <p class="w-6/12 pl-4 text-lg">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt architecto amet vel dolore fuga optio at 
         impedit illo aut excepturi saepe dignissimos perspiciatis temporibus, ad, reprehenderit, deleniti quo doloribus 
@@ -36,7 +65,7 @@
         quisquam maiores? Veniam facilis laborum voluptas possimus, est necessitatibus nobis quas harum unde mollitia quae 
         odio sunt distinctio ducimus molestiae, tenetur atque ratione deserunt quia, placeat amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, assumenda?
       </p>
-      <img src="img_2.jpg" alt="Second Image" class="w-3/6">
+      <img src="img_2.jpg" alt="Second Image" class="w-3/6 align__right-side">
     </div>
     <p class="py-3 text-lg">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,7 +78,7 @@
     </p>
 
     <div class="flex mt-5 justify-between">
-      <img src="img_3.jpg" alt="Third Image" class="w-3/6">
+      <img src="img_3.jpg" alt="Third Image" class="w-3/6 align__left-side">
       <p class="w-6/12 pl-4 text-lg">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt architecto amet vel dolore fuga optio at 
         impedit illo aut excepturi saepe dignissimos perspiciatis temporibus, ad, reprehenderit, deleniti quo doloribus 
